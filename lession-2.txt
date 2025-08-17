@@ -1,0 +1,14 @@
+1. Giải thích các lệnh:
+"git init": khởi tạo thư mục được quản lý bởi Git (thêm các file ở local vào Working Directory).
+"git add <file_name>": thêm file cụ thể ở Working Directory vào Staging Area.
+"git add .": thêm tất cả các file ở Working Directory vào Staging Area.
+"git commit -m <message>": thêm file ở vùng Staging Area vào vùng Repository.
+
+2. 
+a. Tạo 3 file: file1, file2, file3 // cả ba file đều ở vùng local.
+b. Chạy lệnh: git init // cả 3 file được thêm vào vùng Working Directory.
+c. Chạy lệnh: git commit -m "init project" // các file vẫn ở vùng Working Directory vì chưa dùng lệnh thêm file vào vùng Staging Area.
+d. Chạy lệnh: git add file1 // file1 sẽ được thêm vào vùng Staging Area.
+e. Chạy lệnh: git commit -m "add file1" // file1 sẽ được thêm vào vùng Repository.
+f. Chạy lệnh: git commit -m "add file" // folder "lession-2" không có file tên "file" ở vùng Staging Area nên câu lệnh git commit sẽ không chạy được.
+
